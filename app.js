@@ -17,17 +17,8 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
-app.get('/about',(req, res) => {
-  res.render('about')
-})
-
-app.get('/portfolio', (req, res) => {
-  console.log(req)
-  res.render('portfolio')
-})
-
-app.get('/contact', (req, res) => {
-  res.render('contact')
+app.get('/:id',(req, res) => {
+  res.render(`${req.params.id}`)
 })
 
 // Start and listen the server
