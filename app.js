@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/:id',(req, res) => {
-  res.render(`${req.params.id}`)
+  res.render(`${req.params.id}`, { active: true })
 })
 
 // Start and listen the server

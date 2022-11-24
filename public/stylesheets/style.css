@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-/* html,
+html,
 body {
   width: 100%;
   height: 100%;
-} */
+}
 
 h1,
 h2,
@@ -53,6 +53,11 @@ a {
 }
 
 .nav-item:hover {
+  background: #3f3f3f;
+  color: white;
+}
+
+.active {
   background: #3f3f3f;
   color: white;
 }

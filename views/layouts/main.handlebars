@@ -16,16 +16,16 @@
     <div class="container">
       <ul class="nav-list">
         <a href="/">
-          <li class="nav-item" id="home">回到首頁</li>
+          <li class="nav-item " id="home">回到首頁</li>
         </a>
         <a href="about">
-          <li class="nav-item push" id="about">About</li>
+          <li class="nav-item push {{#if active}}active{{/if}}" id="about">About</li>
         </a>
         <a href="http://localhost:3000/portfolio">
-          <li class="nav-item " id="portfolio">Portfolio</li>
+          <li class="nav-item {{#if active}}active{{/if}}" id="portfolio">Portfolio</li>
         </a>
         <a href="http://localhost:3000/contact">
-          <li class="nav-item " id="contact">Contact</li>
+          <li class="nav-item {{#if active}}active{{/if}}" id="contact">Contact</li>
         </a>
       </ul>
     </div>
