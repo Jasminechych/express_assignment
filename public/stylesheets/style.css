@@ -57,7 +57,9 @@ a {
   color: white;
 }
 
-.active {
+.about-about-active,
+.portfolio-portfolio-active,
+.contact-contact-active {
   background: #3f3f3f;
   color: white;
 }

@@ -18,7 +18,9 @@ app.get('/', (req, res) => {
 })
 
 app.get('/:id',(req, res) => {
-  res.render(`${req.params.id}`, { active: true })
+  const id = req.params.id
+  console.log('id', id)
+  res.render(`${req.params.id}`, { id })
 })
 
 // Start and listen the server
